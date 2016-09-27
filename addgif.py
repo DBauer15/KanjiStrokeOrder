@@ -15,10 +15,6 @@ def cleanhtml(raw_html):
   cleantext = re.sub(cleanr,'', raw_html)
   return cleantext
 
-def showText():
-    text = aqt.mw.reviewer.card.q()
-    showInfo("%s" % text)
-
 def mungeQA(html, type, fields, model, data, col):
     try:
         raw = cleanhtml(html)
@@ -38,12 +34,5 @@ def mungeQA(html, type, fields, model, data, col):
 
     return html
 
-
-# create a new menu item, "test"
-action = QAction("test", aqt.mw)
-# set it to call testFunction when it's clicked
-action.triggered.connect(showText)
-# and add it to the tools menu
-aqt.mw.form.menuTools.addAction(action)
 
 addHook("mungeQA", mungeQA)
