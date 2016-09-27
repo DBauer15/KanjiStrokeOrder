@@ -1,6 +1,6 @@
-# KanjiStrokeOrder
+# ANKI Kanji Stroke Order
 
-This add-on will automatically download and display a stroke order chart for a given Kanji card.
+This add-on for Anki will automatically download and display a stroke order chart for a given Kanji card.
 
 <img src='http://s9.postimg.org/b6spkjynj/Screenshot_from_2016_09_26_03_15_49.png'>
 
